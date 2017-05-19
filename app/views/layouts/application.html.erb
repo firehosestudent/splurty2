@@ -11,6 +11,7 @@
   <body>
      <header class="row">
       <div class="col-3">
+       <%= link_to root_path, class: "logo" do %>
         <div class="circle">
           <br />
           You know
@@ -19,6 +20,7 @@
           <br />
           to code
         </div>
+       <% end %>  
       </div>
 
       <div class="col-4 slogan">
@@ -26,7 +28,7 @@
       </div>
 
       <div class="col-5 links">
-        <%= link_to 'contribute', '#' %>
+        <%= link_to 'contribute', new_quote_path %>
         <%= link_to 'about', '#' %>
         <% link_to 'contact', '#' %>
         
@@ -46,7 +48,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <%= link_to "This isn't enough, I need more", "#", class: "next-quote" %>
+          <%= link_to "This isn't enough, I need more", root_path, class: "next-quote" %>
             
         </div>
 
